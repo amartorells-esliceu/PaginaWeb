@@ -54,7 +54,7 @@ nav a:hover {
     color: #c4b5fd;
 }
 
-/* Contingut principal */
+
 main {
     padding: 2rem;
 }
@@ -65,7 +65,7 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* Secció de recomanacions */
+
 .recomanacio {
     background-color: #333;
     padding: 1rem;
@@ -73,18 +73,31 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Fa que els elements estiguin un a sota de l'altre */
+    align-items: center; /* Centra els elements horitzontalment */
+    text-align: center; /* Centra el text */
+    max-width: 300px; /* Ajusta l'ample per evitar que s'estengui massa */
 }
 
 .recomanacio img {
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
+    width: 100%; /* Ajusta l'amplada de la imatge a l'ample de .recomanacio */
+    height: auto;
     border-radius: 8px;
-    margin-right: 1rem;
+    margin-bottom: 10px;
 }
 
-/* Peu de pàgina */
+.recomanacio h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #c4b5fd; /* Opcional: Color per destacar el títol */
+}
+
+.recomanacio p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+
 footer {
     background-color: #2a2a2a;
     text-align: center;
@@ -93,3 +106,11 @@ footer {
     color: #a6a6a6;
     margin-top: 2rem;
 }
+
+/* Contenidor dels jocs per a cada secció */
+.jocs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem; /* Espai entre els elements */
+}
+
