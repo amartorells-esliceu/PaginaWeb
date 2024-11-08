@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem; 
+    color: #c4b5fd;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+}
+
+nav {
+    background-color: #333333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #8ab4f8; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c4b5fd;
+}
+
+/* Contingut principal */
+main {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #ff6347;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Secció de recomanacions */
+.recomanacio {
+    background-color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.recomanacio img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+/* Peu de pàgina */
+footer {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #a6a6a6;
+    margin-top: 2rem;
+}
