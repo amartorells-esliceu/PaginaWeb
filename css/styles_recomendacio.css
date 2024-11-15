@@ -14,7 +14,27 @@ body {
 header {
     background-color: #2a2a2a;
     padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Efecte de zoom */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .logo {
+    position: absolute;
+    top: 55px; 
+    left: 10px;
+    width: 250px;
+    height: auto;
 }
 
 header h1 {
@@ -54,7 +74,6 @@ nav a:hover {
     color: #c4b5fd;
 }
 
-
 main {
     padding: 2rem;
 }
@@ -65,7 +84,6 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-
 .recomanacio {
     background-color: #333;
     padding: 1rem;
@@ -73,30 +91,31 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column; /* Fa que els elements estiguin un a sota de l'altre */
-    align-items: center; /* Centra els elements horitzontalment */
-    text-align: center; /* Centra el text */
-    max-width: 300px; /* Ajusta l'ample per evitar que s'estengui massa */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
 }
 
 .recomanacio img {
-    width: 100%; /* Ajusta l'amplada de la imatge a l'ample de .recomanacio */
-    height: auto;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
+
 .recomanacio h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #c4b5fd; /* Opcional: Color per destacar el títol */
+    color: #c4b5fd;
 }
 
 .recomanacio p {
     font-size: 1em;
     margin: 5px 0;
 }
-
 
 footer {
     background-color: #2a2a2a;
@@ -107,10 +126,8 @@ footer {
     margin-top: 2rem;
 }
 
-/* Contenidor dels jocs per a cada secció */
 .jocs-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem; /* Espai entre els elements */
+    gap: 1rem;
 }
-
