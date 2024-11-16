@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - ZYCLO GAMES</title>
+    <link rel="stylesheet" href="css/styles_contacte.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/LOGO_ZYCLO.png" alt="Logo de ZYCLO GAMES" class="logo">
+        </a>
+        <h1>Contacta'ns</h1>
+        <p>Si tens alguna pregunta, suggeriment o dubte, no dubtis a contactar-nos!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="tier_list.html">Tier Lists</a></li>
+            <li><a href="recomenacions.html">Recomanacions</a></li>
+            <li><a href="millors_jocs.html">Millors jocs de la història</a></li>
+            <li><a href="contacte.html">Contacta'ns</a></li>
+        </ul>
+    </nav>
+
+    <!-- Secció de Contacte -->
+    <section id="contact-section">
+        <div class="contact-form-container">
+            <h2>Envia'ns un Missatge</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required placeholder="El teu nom" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correu Electrònic:</label>
+                    <input type="email" id="email" name="email" required placeholder="El teu correu electrònic" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Missatge:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Escriu el teu missatge aquí..." autocomplete="off"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Missatge</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 ZYCLO GAMES. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="js/guardar_missatges.js"></script>
+</body>
+</html>

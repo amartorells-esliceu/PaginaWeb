@@ -1,0 +1,148 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem; 
+    color: #c4b5fd;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a6a6a6;
+}
+
+header .logo {
+    position: absolute;
+    top: 55px; 
+    left: 10px;
+    width: 250px;
+    height: auto;
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Efecte de zoom */
+}
+
+nav {
+    background-color: #333333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #8ab4f8; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c4b5fd;
+}
+
+/* Secció de Contacte */
+#contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    background-color: #1a1a1a;
+}
+
+.contact-form-container,
+.contact-info {
+    width: 45%;
+}
+
+.contact-form-container h2,
+.contact-info h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-form-container .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-container label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #ffcc00;
+}
+
+.contact-form-container button {
+    padding: 0.8rem 2rem;
+    background-color: #ff6f00;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 2rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #e65100;
+}
+
+/* Informació de contacte */
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #a6a6a6;
+    margin-top: 2rem;
+}
